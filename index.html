@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>functionApplication</title>
+</head>
+<body>
+	<h1 style='text-align: center; margin-top: 50px;font-weight: 900;'>Functional Programming ------
+		<i>函数式编程</i>
+	</h1>
+	<h2 style='text-align: center; margin-bottom: 50px;font-weight: 900;'>函数式编程相关应用实践整理 ------ 
+		<i>所有代码亲测可用</i>
+	</h2>
+	<h3>一、相关知识点</h3>
+	<h4 style='margin-left: 50px;'>
+		函数式编程思想
+		<ol style='margin-left: 140px;'>
+			<li>Pointfree风格：不使用所要处理的值，只合成运算过程</li>
+		</ol>
+	</h3>
+
+
+	<h3>二、大体内容</h3>
+		<i style='margin-left: 50px'>温馨提示：建议按照index.html引用的js脚本的顺序查看</i>
+	<h4 style='margin-left: 50px;'>函数组合子
+		<ol style='margin-left: 140px;'>
+			<li>组合子使用的只是它们的函数引用， 所以是惰性求值</li>
+		</ol>
+	</h4>
+	<h4 style='margin-left: 50px;'>
+		Monad的相关总结：
+		<ol style='margin-left: 140px;'>
+			<li>面向对象抛异常的机制让函数变得不纯， 大部分的责任都推到了try catch逻辑上</li>
+			<li>把值包裹到容器中的模式是为了构建无副作用的代码， 把可能不纯的变化包裹成引用透明的过程</li>
+			<li>使用Functor将函数应用到容器中的值， 这是无副作用地、 不可变地访问和修改操作</li>
+			<li>Monad是函数式中用来降低应用复杂度的设计模式， 通过这种模式可以将函数编排成安全的数据流程</li>
+			<li>交错的组合函数和Monadic类型是非常有弹性而且强大的， 如Maybe、 Either和 IO</li>
+		</ol>
+	</h4>
+
+
+
+	<h2>三、dom测试</h2>
+	<div style='text-align: center; margin-top: 50px;font-weight: 900;' id='IOMonad'>IOMonad Test</div>
+
+	<h2>四、答谢</h2>
+	<h5 style='margin-left: 140px;'>全都是老子自己写的...</h5>
+	<h5 style='margin-left: 140px;'>后续还会更新一些知识点......</h5>
+
+
+	
+	<!-- 柯里化 -->
+	<!-- <script src='./js/Curry.js'></script> -->
+	<!-- 深度冻结对象 -->
+	<!-- <script src='./js/DeepFreeze.js'></script> -->
+	<!-- 检查类型实现 -->
+	<!-- <script src='./js/Tuple.js'></script> -->
+	<!-- 组合函数 -->
+	<!-- <script src='./js/Compose.js'></script> -->
+		<!-- 函数组合子 -->
+		<!-- K组合子 -- 嵌入函数组合中 -->
+		<!-- <script src='./js/Tap.js'></script> -->
+		<!-- Or组合子 -->
+		<!-- <script src='./js/Alt.js'></script> -->
+		<!-- Seq组合子 -- 遍历函数序列 -->
+		<!-- <script src='./js/Seq.js'></script> -->
+		<!-- Fork -- 需要以两种不同的方式处理单个资源 -->
+		<!-- <script src='./js/Fork.js'></script> -->
+<!-- 下边的内容,如果没有深入了解函数式编程，理解起来可能会有些困难！！！!!!!!!! -->
+	<!-- 包裹不安全的值 -->
+	<!-- <script src='./js/Wrapper.js'></script> -->
+		<!-- 辅助组合子 identity -- identity :: (a) -> a -->
+		<!-- <script src='./js/Identity.js'></script> -->
+	<!-- 函数式处理错误 -->
+	<!-- <script src='./js/Monad.js'></script> -->
+	<!-- Monad进阶 -->
+		<!-- 扁平化Monadic结构 -->
+		<!-- <script src='./js/MonadSuper.js'></script> -->
+		<!-- Maybe Monad 处理异常 -->
+		<!-- <script src='./js/MaybeMonad.js'></script> -->
+		<!-- Either Monad 处理异常 -->
+		<!-- <script src='./js/EitherMonad.js'></script> -->
+		<!-- IO Monad 示例：函数式操作dom -->
+		<!-- <script src='./js/IOMonad.js'></script> -->
+	<!-- 函数式优化 -->
+		<!-- 记忆化 -->
+		<!-- <script src='./js/Memoized.js'></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

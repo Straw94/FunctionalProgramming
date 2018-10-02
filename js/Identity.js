@@ -1,0 +1,1 @@
+const identity = (val) => val;
